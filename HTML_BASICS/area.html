@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> area </title>
+<script type="text/javascript">
+function area()
+{
+ var radius= document.form1.rad.value;
+var result=(3.14*radius*radius);
+alert ("the area is "+result);
+}
+</script>
+</head>
+<body>
+<form name ="form1">
+<H2> enter the radius of the circle</H2>
+AREA:<input type="number" name="rad" id="rad">
+<br>
+<input type ="submit" name="submit" value="circle area" onClick="area()">
+</form>
+</body>
+</html>

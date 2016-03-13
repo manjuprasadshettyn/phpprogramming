@@ -1,0 +1,24 @@
+file.php     then links   to     IN.php       then finally to    1.php
+
+
+
+
+
+passing  from form.php  to   in.php
+
+taking by post and assigning to one variable
+
+then passing that to another page in header
+
+using 
+  
+header("location:1.php?name=$nm & pas=$ps");
+
+
+heare  ? to separate file and variable
+       & to pass two value 
+
+
+and in 1.php
+
+usess GET method to access it  because its by default    

@@ -1,0 +1,4 @@
+
+Praveen : 22 : Male : Praveen  : PUC : UG
+Nikhil : 29 : Male : Nikhil : PUC : UG : PG
+ :  :  : 

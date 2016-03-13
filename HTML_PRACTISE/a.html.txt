@@ -1,0 +1,9 @@
+<html>
+<head>
+<title>practice</title>
+</head>
+<body>
+<b>my objective is to study all technical things about computers and work in a good MNC,first of all i would
+like to become a good citizen of india</b>
+</body>
+</html>

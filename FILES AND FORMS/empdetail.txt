@@ -1,0 +1,5 @@
+
+  ganesh  35  Female  UG
+  uytiu  78  Male  PUC
+  sowmya  23  Female  UG
+  nagesh  19  Male  UG

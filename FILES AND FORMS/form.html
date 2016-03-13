@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Registration form</title>
+<script>
+function valid()
+{
+var nm=document.myform.name.value;
+var age=document.myform.age.value;
+
+if(nm!="" && age!="")
+{
+	if(isNaN(age))
+	{
+	alert("Please Enter age in Numbers");
+	return false;
+	}
+	else
+	{
+	return true;
+	}
+}
+else 
+{
+alert("fill all the fields");
+return false;
+}
+}
+</script>
+</head>
+<body background="a.jpg">
+<br/><center><b><font color="black" size="7">Employee Details Please</font></b></center>
+<br/><br/>
+<form name="myform" onsubmit="return valid();" action="emp.php" method="post">
+
+<pre>
+						Name            :<input type="text" name="name"> 
+						
+						Age             :<input type="text" name="age"> 
+						
+						Gender          :<select name="gen">
+						        <option value="Male">Male</option>
+								<option value="Female">Female</option>
+							   </select>
+						
+						Qualification   :<select name="qual">
+						        <option value="PUC">PUC</option>
+						        <option value="UG">UG</option>
+								<option value="PG">PG</option>
+								<option value="Other">Other</option>
+								</select>
+						
+								<input type="submit"  value="    Submit    " onclick="valid">
+								<!--<input type="email" id="email" placeholder="e@gmail.com">!-->
+								
+	  
+</pre>
+</form>
+
+
+</body>
+</html>

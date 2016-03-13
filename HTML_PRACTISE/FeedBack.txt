@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Feed Back Form
+</title>
+<script language="JavaScript">
+
+
+function IsBlank(s)
+{
+var len=s.length
+for(i=0;i<len;i++)
+{
+if(s.charAt(i)!="")
+{return false}
+}
+
+return true
+
+}
+
+
+function Validate_LastName()
+{
+
+var str=document.form1.lname.value
+if(IsBlank(str))
+{
+alert("The lastname field cannot be empty")
+return false;
+}
+return true
+}
+
+
+
+function Validate_FirstName()
+{
+
+var str=document.form1.fname.value
+if(IsBlank(str))
+{
+alert("The firstname field cannot be empty")
+return false;
+}
+return true
+}
+
+
+function Validate_Email()
+{
+var str=document.form1.email.value
+if(IsBlank(str))
+{
+alert("the email field cannot be empty")
+return false
+}
+
+if(IsValid())
+{return true}
+return false
+
+}
+
+
+function IsValid()
+{
+var str=document.form1.email.value
+len=str.length
+for(i=1;i<(len-3);i++)
+{
+if(str.charAt(i)=="@") 
+{
+return true
+}
+}
+
+alert("You have entered invalid email address")
+return false
+
+}
+
+
+function processForm()
+{
+if(!Validate_FirstName(document.form1.fname.value)) return false
+
+
+if(!Validate_LastName(document.form1.lname.value)) return false
+if(!Validate_Email(document.form1.email.value)) return false
+
+if(!IsValid())
+return false
+
+disp=open("","result")
+disp.document.write("<title>Result Page</title>"+"<pre>")
+disp.document.write("<body bgcolor='coral'>")
+disp.document.write("<h1 align='center' color='red'>"+"YOUR FEEDBACK DETAILS ARE"+"</h1>"+"<br><br>")
+
+
+
+disp.document.write("First name\t\t:"+ document.form1.fname.value+"<br>")
+disp.document.write("Last name\t\t:"+ document.form1.lname.value+"<br>")
+disp.document.write("E mail Address\t\t:"+ document.form1.email.value+"<br>")
+disp.document.write("Your comment\t\t:"+ document.form1.comment.value+"<br>")
+disp.document.write("</pre>")
+disp.document.write("<br>"+"<h2 align='center'>"+"Thanks For your Feed Back"+"</h2>"+"<hr size=3 color='green'>"+"<br><br>")
+
+
+if(disp.confirm("Is this information correct?"))
+disp.close()
+}
+</script>
+</head>
+<body bgcolor="coral">
+
+<h2 align="center">FeedBack Form</h2>
+<hr>
+
+<form name="form1">
+
+<p>First Name: 
+<input type="text" name="fname" maxsize=10 onChange="Validate_FirstName()"> 
+
+
+Larst Name: 
+<input type="text" name="lname" maxsize=10 onChange="Validate_LastName()">
+
+<p> Email Address : 
+<input type="text" name="email" maxsize=10 onChange="Validate_Email()">
+
+<p>Comments :
+<textarea name="comment" rows=5 cols=30 ONFOCUS="document.form1.comment.select()">
+Enter your comments
+</textarea> </p>
+
+
+<p align="center">
+<input type="submit" value="Submit This Form" onClick="return processForm()">
+
+<input type="reset" value="Reset This Form"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+
+
+
+
+
+
+<HTML>
+
+<script language="javascript">
+function check()
+{
+  var t,t1;
+t=frm1.a.value;
+t1=frm1.b.value;
+if(t=="indian" && t1>="18")
+{
+alert("eligible for voting");
+}
+else if(t=="")
+{
+alert("enter nationality");
+
+}
+else if(t1=="")
+{
+alert("enter age");
+
+}
+else
+{
+alert("not eligible for voting");
+}
+}
+</script> 
+<BODY> 
+<H1>Enter the details</H1> 
+<FORM NAME="frm1"> 
+Enter your nationality: 
+<INPUT TYPE="Text" NAME="a" id="a" SIZE="20"><BR><BR> 
+Enter your age: 
+<INPUT TYPE="Text" NAME="b" id="b" SIZE="2"> 
+<BR><BR> 
+<INPUT TYPE="Button" NAME="BSubmit" VALUE="Send details"  onClick="check()"> 
+</FORM> 
+</BODY> 
+</HTML> 

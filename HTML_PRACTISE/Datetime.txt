@@ -1,0 +1,91 @@
+
+
+
+<html>
+<head>
+<title>Feed Back Form
+</title>
+<script language="JavaScript">
+
+function func1()
+{
+
+mydate=new Date()
+disp=open("","result")
+disp.document.write("<title>Result Page</title>"+"<pre>")
+disp.document.write("<font size='+3' COLOR='GREEN'>")
+disp.document.write("<body bgcolor='coral'>"+"<h1 align='center'>"+"WELCOME"+"</h1>"+"<br>")
+
+disp.document.write("Todays date is:\t ")
+ disp.document.write(mydate.getDate() +"/"+mydate.getMonth()+"/"+mydate.getYear())
+ disp.document.write("<br>")
+disp.document.write("System Time is \t")
+ disp.document.write(mydate.getHours()+":"+mydate.getMinutes()+":"+mydate.getSeconds())
+
+ disp.document.write("<BR>"+"************************")
+
+ disp.document.write("")
+disp.document.write("<br>")
+disp.document.write("<br>")
+disp.document.write("<BR>"+"<h2 align='center'>"+"Thank You"+"</h2>")
+disp.document.write("<hr size=3 color='green'>"+"<br><br>")
+
+
+disp.document.write("</PRE>")
+}
+
+
+
+
+</script>
+</head>
+<body bgcolor="aqua">
+
+<h2 align="center">IGNOU </h2>
+<hr>
+<form name="form1">
+<table align="center" width="50">
+<tr> <td height=45>Courses Offered: 
+
+<td height=45>
+<select>
+<option> BA </option>
+<option> B.Com </option>
+<option> M.Com </option>
+<option> MBA </option>
+<option> MCA </option>
+</select>
+<tr><td height=45> Are you a Student of IGNOU
+<td height=45>
+<input type="radio"  name="y" value="male">Yes
+<td>
+<input type="radio"  name="y" value="female">No
+
+<tr><td height=50> Select an option
+<td height=50>
+<select name="intro" onChange="func1()">     
+<option >Introductuon</option>
+<option >Objective</option>
+<option >Video Show</option>
+<option >References</option>
+
+
+
+</select>
+
+<tr><td>
+
+
+<tr><td height=120>
+<tr><td>
+
+
+<tr><td>
+<input type="submit" value="Submit This Form">
+<td><input type="reset" value="Reset This Form">
+
+</table>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+PULL DOWN MENU SIMULATION
+</title>
+<script>
+function goToNewPage(dropdownlist)
+ {
+ var url = dropdownlist.options(dropdownlist.selectedIndex).value;
+ if (url != "")
+ {
+ window.open(url);
+ }
+ }
+</script>
+</head>
+<body>
+<form name="dropdown">
+<select name="list" accesskey="H">
+<option selected>Select...</option>
+<option value='f:/html_practice/link1.html'>introduction</option>
+<option value='f:/html_practice/link2.html'>videoshow</option>
+<option value='f:/html_practice/link3.html'>objectives</option>
+<option value='f:/html_practice/link4.html'>references</option>
+  <select>
+ <input type=button value="Go" onclick="goToNewPage(document.dropdown.list)">
+</form>
+</body>
+</html>

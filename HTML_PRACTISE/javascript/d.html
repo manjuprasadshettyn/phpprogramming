@@ -1,0 +1,39 @@
+<html>
+<head>
+<title> stud </title>
+</head>
+<script language="javascript">
+function check()
+{
+  var t,t1;
+t=form1.t.value;
+t1=form1.t2.value
+if(t=="" && t1=="")
+{
+alert("enter both");
+}
+else if(t=="")
+{
+alert("enter user name");
+form1.t.focus();
+}
+else if(t1=="")
+{
+alert("enter password");
+form1.t1.focus();
+}
+else
+{
+alert("ok");
+}
+}
+</script>
+<body>
+<form name="form1" method="post" action="">
+<p>User name<input type="text" name="t" ></p>
+<p>Paswrd<input type="password" name="t2" ></p>
+<p><input type="button" name="button" value="button" onClick="check()"></p>
+</form>
+</body>
+</html>
+

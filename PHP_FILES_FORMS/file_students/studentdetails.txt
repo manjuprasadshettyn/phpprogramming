@@ -1,0 +1,5 @@
+4nm13cs000:arvind:19:mg road mangalore:25262111
+4nm13cs001:basker:20:suratkal, mangalore:25262112
+4nm13cs002:chirag:18:katpady:25262113
+4nm13cs003:danush:21:bangalore25262114
+4nm13cs004:hema:25:bangalore25262115

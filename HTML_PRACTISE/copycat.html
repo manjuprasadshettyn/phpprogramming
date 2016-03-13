@@ -1,0 +1,96 @@
+                                                                     
+                                                                     
+                                                                     
+                                             
+
+<html>
+<head>
+<title>Ignou</title>
+</head>
+<body>
+<script language="javascript">
+function validate()
+{
+if(txtname.value=="")
+{
+alert("Name field is empty"); txtname.focus();}
+else if(father.value==""){
+alert("father field is empty"); father.focus();}
+else if(txtarea.value==""){
+alert("address field is empty"); txtarea.focus();}
+var sy=date.value
+else if(date.value==""){
+alert("please enter date of birth"); date.focus();}
+else if(g.value=="" || (g.value!="m" && g.value!="f")){
+alert("please enter gender"); g.focus();}
+else if(nation.value==""){
+alert("please enter nation"); nation.focus();}
+		
+else if(txtph.value==""){
+alert("please enter mobile no"); txtph.focus();}
+else if(txtmail.value==""){
+alert("please enter email"); txtmail.focus();}
+else if(txtfeed.value==""){
+alert("please give some feedback"); txtfeed.focus();}
+
+else
+alert("Thank you");
+}
+</script>
+<h1 align=center>Admission Form</h1><table width="572" border="1" align="center"><th height="56" colspan="2">Application</th> 
+  <tr >
+    <th width="139" align="center" scope="col">Name</th>
+    <th width="417" scope="col"><p>
+      <input name="txtname" type="text">
+    </p></th>
+  </tr>
+  <tr>
+    <td align="center">Father's Name</td>
+    <td align="center" valign="middle"><input name="father" type="text" >
+    </td>
+  </tr>
+<tr>
+    <td align="center">Address</td>
+    <td align="center"><textarea name="txtarea"rows="4"cols="40"></textarea></td>
+  </tr>
+  <tr>
+    <td height="52" align="center">
+    Date of birth</td>
+    <td align="center"> <input type="text" name=date></td>
+    </tr>
+  <tr>
+    <td height="75" align="center">Gender(m or f)</td>
+    <td align="center">
+          <input type="text" input name="g" >   
+      
+        <br>
+      </p></td>
+  </tr>
+  <tr>
+    <td align="center">Nationality</td>t
+    <td align="center"><input type="text" name=nation></td>
+  </tr>
+  <tr>
+    <td align="center">Mobile No</td>
+    <td align="center"><input type="text" input name="txtph"></td>
+  </tr>
+  <tr>
+    <td align="center">Email-ID</td>
+    <td align="center"><input type="text" input name="txtmail"size="40"></td>
+  </tr>
+  <tr>
+    <td align="center">feedback</td>
+    <td align="center"><textarea name="txtfeed"rows="4"cols="40"></textarea></td>
+  </tr>
+  <tr>
+   <td colspan="2" align="center"><input type="submit" name="send" value="Submit" onClick=validate()> 
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <input type="reset" name="clear" value="clear"></td>
+  </tr>
+  
+</table>
+</body>
+</html>
+
